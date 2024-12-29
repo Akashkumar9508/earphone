@@ -17,23 +17,23 @@ import PhonePe from '../assets/PhonePe.png';
 const Footer = () => {
     return (
         <div>
-            <div className=" p-4 rounded-lg ">
+            <div className=" p-4 rounded-lg mb-20 mt-20 ">
                 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <div className=" p-4 rounded-lg  h-[300px] border-black border-2">
+                    <div className=" p-4 h-[300px]  overflow-hidden hover:scale-105 transition-transform duration-300 ease-in-out cursor-pointer rounded-md ">
                         <h3 className="text-3xl font-semibold mb-2">Frequently Asked Questions</h3>
                         <p>Information about online payment methods, security measures, etc.</p>
-                        <img src="" alt="Frequently Asked Questions" srcset="" className='w-auto h-auto' />
+                        <img src={Family} alt="Frequently Asked Questions"  className='w-auto h-auto rounded-md' />
                     </div>
-                    <div className="bg-white p-4 rounded-lg  h-[300px] border-black border-2">
+                    <div className="bg-white p-4 rounded-lg  h-[300px]  overflow-hidden hover:scale-105 transition-transform duration-300 ease-in-out cursor-pointer">
                         <h3 className="text-3xl font-semibold mb-2">Online Payment Process</h3>
                         <p>Details on home delivery services, areas covered, estimated delivery times, etc.</p>
-                        <img src="" alt="Home Delivery Options" />
+                        <img src={DeleveryBoy} alt="Home Delivery Options" />
                     </div>
-                    <div className="bg-white p-4 rounded-lg  h-[300px] border-black border-2">
+                    <div className="bg-white p-4 rounded-lg  h-[300px]  overflow-hidden hover:scale-105 transition-transform duration-300 ease-in-out cursor-pointer">
                         <h3 className="text-3xl font-semibold mb-2">Home Delivery Options</h3>
                         <p>Information about safety protocols, hygiene measures, etc.</p>
-                        <img src="" alt="Updates on Safe Shopping in our Stores" />
+                        <img src={Mobile} alt="Updates on Safe Shopping in our Stores" />
                     </div>
                 </div>
             </div>

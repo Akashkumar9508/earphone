@@ -6,6 +6,7 @@ import Product from '../components/Product';
 import OffSection from '../components/OffSection';
 import Brand from '../components/Brand';
 import Footer from '../components/Footer';
+import Product2 from '../components/Product2.jsx';
 const Home = () => {
     
   
@@ -21,6 +22,7 @@ const Home = () => {
               <img data-aos="fade-up" src={Laptop} alt="" />
             </div>
             <OffSection />
+          <Product2 />
             <Brand />
             <Footer />
 

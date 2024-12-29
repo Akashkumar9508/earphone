@@ -5,6 +5,7 @@ import WairedEarphone from "../assets/wairedEarphone.png";
 
 const Product = () => {
   return (
+    <>
     <div
       data-aos="fade-up"
       className="absolute bottom-3 left-0 right-0 z-10 text-black "
@@ -64,6 +65,7 @@ const Product = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

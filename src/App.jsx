@@ -8,6 +8,7 @@ import OffSection from "./components/OffSection"
 import Footer from './components/Footer.jsx'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Product from './components/Product.jsx';
+import Product2 from './components/Product2.jsx';
 
 const App = () => {
   useEffect(() => {
@@ -23,6 +24,7 @@ const App = () => {
             <Route path="off" element={<OffSection />} />
             <Route path="/" element={<Home />} />  
             <Route path="product" element={<Product />} />  
+            <Route path="product2" element={<Product2 />} />  
         </Routes>
     </BrowserRouter>
   )

@@ -9,10 +9,10 @@ import target from '../assets/target.png';
 import Bemo from "../assets/bemo.png";
 const Brand = () => {
   return (
-    <div className="container mx-auto mt-10 mb-10">
-  <h2 className="text-2xl font-semibold mb-4 text-center ">Choose By Brand</h2>
+    <div className="container mx-auto mt-20 mb-20 ">
+  <h2 className="text-2xl font-semibold text-center  mb-10">Choose By Brand</h2>
 
-  <div data-aos="fade-up" className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 ">
+  <div data-aos="fade-up" className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 ">
     <div className="flex flex-col items-center justify-center p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
       <img src={Staple} alt="Staples" className="w-20 h-20 mb-2 " />
       <h3 className="text-lg font-semibold">Staples</h3>
