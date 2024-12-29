@@ -3,6 +3,8 @@ import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Nav from '../components/Nav'
+import Laptop from '../assets/hero.jpg'
+import Product from '../components/Product';
 const Home = () => {
     useEffect(() => {
         AOS.init({
@@ -12,13 +14,19 @@ const Home = () => {
   
 
         return (
-          <div className="container mx-auto p-4">
+          <div className="container relative mx-auto">
             <Nav />
-            <div className="bg-green-500 text-white p-4 rounded-md mb-4">
-              <h2 className="text-2xl font-bold">Grab Upto 50% Off On Selected Headphone</h2>
-              <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                Buy Now
-              </button>
+            <div className=" text-white relative p-4 rounded-md mb-4">
+              <div className="buy absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ">
+              <h2 className="  text-3xl font-bold">Grab Upto 50% Off On Selected Headphone</h2>
+        <button className=" bg-white hover:bg-green-500 text-black font-bold py-2 px-4 rounded">
+          Buy Now
+        </button>
+              </div>
+              <Product />
+              <img src={Laptop} alt="" />
+
+                
             </div>
       
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
