@@ -17,23 +17,23 @@ import PhonePe from '../assets/PhonePe.png';
 const Footer = () => {
     return (
         <div>
-            <div className=" p-4 rounded-lg mb-10 mt-10">
-                <h2 className="text-xl font-bold   mb-4">Frequently Asked Questions</h2>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 overflow-hidden">
-                    <div className="  rounded-lg shadow-sm h-[300px] bg-gray-50 overflow-hidden hover:scale-105 transition-transform duration-300 ease-in-out cursor-pointer">
-                        <h3 className="text-lg font-semibold mb-2  ml-4">Online Payment Process</h3>
-                        <p className='ml-4 text-gray-500 text-[0.9rem]'>Information about online payment methods, security measures, etc.</p>
-                        <img src={Family} alt="Frequently Asked Questions"  />
+            <div className=" p-4 rounded-lg ">
+                
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div className=" p-4 rounded-lg  h-[300px] border-black border-2">
+                        <h3 className="text-3xl font-semibold mb-2">Frequently Asked Questions</h3>
+                        <p>Information about online payment methods, security measures, etc.</p>
+                        <img src="" alt="Frequently Asked Questions" srcset="" className='w-auto h-auto' />
                     </div>
-                    <div className=" rounded-lg shadow-sm h-[300px] bg-gray-50 overflow-hidden hover:scale-105 transition-transform duration-300 ease-in-out cursor-pointer">
-                        <h3 className="text-lg font-semibold mb-2 ml-4">Home Delivery Options</h3>
-                        <p className='ml-4 text-gray-500 text-[0.9rem]'>Details on home delivery services, areas covered, estimated delivery times, etc.</p>
-                        <img src={Mobile} alt="Home Delivery Options"  />
+                    <div className="bg-white p-4 rounded-lg  h-[300px] border-black border-2">
+                        <h3 className="text-3xl font-semibold mb-2">Online Payment Process</h3>
+                        <p>Details on home delivery services, areas covered, estimated delivery times, etc.</p>
+                        <img src="" alt="Home Delivery Options" />
                     </div>
-                    <div className="  rounded-lg shadow-sm h-[300px] bg-gray-50 overflow-hidden hover:scale-105 transition-transform duration-300 ease-in-out cursor-pointer">
-                        <h3 className="text-lg font-semibold ml-4 mb-2">Updates on Safe Shopping in our Stores</h3>
-                        <p className='ml-4 text-gray-500 text-[0.9rem]'>Information about safety protocols, hygiene measures,and best care etc.</p>
-                        <img src={DeleveryBoy} alt="Updates on Safe Shopping in our Stores" />
+                    <div className="bg-white p-4 rounded-lg  h-[300px] border-black border-2">
+                        <h3 className="text-3xl font-semibold mb-2">Home Delivery Options</h3>
+                        <p>Information about safety protocols, hygiene measures, etc.</p>
+                        <img src="" alt="Updates on Safe Shopping in our Stores" />
                     </div>
                 </div>
             </div>
