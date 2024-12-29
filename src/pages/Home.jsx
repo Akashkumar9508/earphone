@@ -1,9 +1,8 @@
 
 import { useEffect } from 'react';
 import AOS from 'aos';
-import 'aos/dist/aos.css'; // Import AOS styles
-
-
+import 'aos/dist/aos.css';
+import Nav from '../components/Nav'
 const Home = () => {
     useEffect(() => {
         AOS.init({
@@ -13,7 +12,7 @@ const Home = () => {
   
 
   return (
-    <div data-aos="fade-up" >Home</div>
+    <Nav />
   )
 }
 
