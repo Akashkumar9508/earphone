@@ -14,7 +14,7 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="bg-white border-b border-gray-200">
+    <nav data-aos="fade-down" className="bg-white border-b border-gray-200 relative z-20">
       {/* Space for logo */}
       <div className="container mx-auto px-8 py-4 flex justify-between items-center"> 
       <img src={logoImg} className='h-10' alt="" />

@@ -1,78 +1,26 @@
 
-import { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+
 import Nav from '../components/Nav'
 import Laptop from '../assets/hero.jpg'
 import Product from '../components/Product';
 const Home = () => {
-    useEffect(() => {
-        AOS.init({
-          duration: 1000, 
-          once: true, 
-        })} ,[]);
+    
   
 
         return (
-          <div className="container relative mx-auto">
+          <div  className="container relative mx-auto">
             <Nav />
-            <div className=" text-white relative p-4 rounded-md mb-4">
+            <div className=" text-white relative  rounded-md mb-4">
               <div className="buy absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ">
               <h2 className="  text-3xl font-bold">Grab Upto 50% Off On Selected Headphone</h2>
-        <button className=" bg-white hover:bg-green-500 text-black font-bold py-2 px-4 rounded">
-          Buy Now
-        </button>
               </div>
               <Product />
-              <img src={Laptop} alt="" />
+              <img data-aos="fade-up" src={Laptop} alt="" />
 
                 
             </div>
       
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-              <div className="bg-white rounded-md p-4 shadow-md">
-                <img src="https://via.placeholder.com/200" alt="Wireless Earbuds" className="w-full mb-2" />
-                <h3 className="text-lg font-semibold">Wireless Earbuds, IPX8</h3>
-                <p className="text-gray-500">Original Sound, IPX8 Waterproof</p>
-                <span className="text-lg font-bold">$89</span>
-                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-2">
-                  Add to Cart
-                </button>
-              </div>
-      
-              <div className="bg-white rounded-md p-4 shadow-md">
-                <img src="https://via.placeholder.com/200" alt="AirPods Max" className="w-full mb-2" />
-                <h3 className="text-lg font-semibold">AirPods Max</h3>
-                <p className="text-gray-500">A perfect fit for music, movies, and podcasts</p>
-                <span className="text-lg font-bold">$559</span>
-                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-2">
-                  Add to Cart
-                </button>
-              </div>
-      
-              <div className="bg-white rounded-md p-4 shadow-md">
-                <img src="https://via.placeholder.com/200" alt="Bose BT Earphones" className="w-full mb-2" />
-                <h3 className="text-lg font-semibold">Bose BT Earphones</h3>
-                <p className="text-gray-500">Bass tone is perfectly balanced</p>
-                <span className="text-lg font-bold">$289</span>
-                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-2">
-                  Add to Cart
-                </button>
-              </div>
-      
-              <div className="bg-white rounded-md p-4 shadow-md">
-                <img src="https://via.placeholder.com/200" alt="VIVEFOX Headphones" className="w-full mb-2" />
-                <h3 className="text-lg font-semibold">VIVEFOX Headphones</h3>
-                <p className="text-gray-500">...</p>
-                <span className="text-lg font-bold">$39</span>
-                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-2">
-                  Add to Cart
-                </button>
-              </div>
-      
-              {/* Add more product cards here */}
-      
-            </div>
+            
           </div>
         );
       
