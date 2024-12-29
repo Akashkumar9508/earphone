@@ -5,7 +5,7 @@ import Sofa from  '../assets/sofa.png';
 
 const OffSection = () => {
   return (
-    <div className="container mx-auto w-full">
+    <div data-aos="fade-up" className="container mx-auto w-full mb-10 mt-10">
   <h2 className="text-2xl font-semibold mb-4 text-center">Get Up To 70% Off</h2>
 
   <div className="flex justify-center gap-4  w-full">

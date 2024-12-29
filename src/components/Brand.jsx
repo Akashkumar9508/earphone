@@ -9,7 +9,7 @@ import target from '../assets/target.png';
 import Bemo from "../assets/bemo.png";
 const Brand = () => {
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto mt-10 mb-10">
   <h2 className="text-2xl font-semibold mb-4 text-center ">Choose By Brand</h2>
 
   <div data-aos="fade-up" className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 ">

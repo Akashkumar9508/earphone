@@ -1,6 +1,7 @@
 import  { useState } from 'react';
 import { FaSearch, FaUser, FaShoppingCart } from 'react-icons/fa';
 import logoImg from '../assets/logo.png';
+import { NavLink } from 'react-router-dom';
 
 const NavBar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -21,21 +22,7 @@ const NavBar = () => {
         <div className="logo-space w-24"></div> 
 
         <ul className="nav-links flex space-x-6 -ml-20">
-          <li 
-            className="relative" 
-            onMouseEnter={() => handleMouseEnter(0)} 
-            onMouseLeave={handleMouseLeave}
-          >
-            Categories 
-            {isDropdownOpen === 0 && (
-              <ul className="absolute top-full left-0 bg-white shadow-md rounded-md mt-2">
-                <li className="p-2 hover:bg-gray-100">Electronics</li>
-                <li className="p-2 hover:bg-gray-100">Fashion</li>
-                <li className="p-2 hover:bg-gray-100">Home & Kitchen</li>
-                <li className="p-2 hover:bg-gray-100">Beauty & Personal Care</li>
-              </ul>
-            )}
-          </li>
+          <NavLink to='/product' >Categories</NavLink>
           <li 
             className="relative" 
             onMouseEnter={() => handleMouseEnter(1)} 
@@ -91,14 +78,15 @@ const NavBar = () => {
         </div>
 
         <div className="user-actions flex space-x-4">
-          <button className="flex items-center text-gray-700 hover:text-blue-500">
-            <FaUser className="mr-2" />
-            <span>Account</span>
-          </button>
-          <button className="flex items-center text-gray-700 hover:text-blue-500">
-            <FaShoppingCart className="mr-2" />
-            <span>Cart</span>
-          </button>
+          <NavLink to="/account"  className="flex items-center text-gray-700 hover:text-blue-500">
+          <FaUser className="mr-2" />
+          <span>Account</span>
+          </NavLink>
+          <NavLink to="/card" className="flex items-center text-gray-700 hover:text-blue-500">
+          <FaShoppingCart className="mr-2" />
+          <span>cart</span>
+          </NavLink>
+    
         </div>
       </div>
     </nav>

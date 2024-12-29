@@ -3,6 +3,9 @@
 import Nav from '../components/Nav'
 import Laptop from '../assets/hero.jpg'
 import Product from '../components/Product';
+import OffSection from '../components/OffSection';
+import Brand from '../components/Brand';
+import Footer from '../components/Footer';
 const Home = () => {
     
   
@@ -16,11 +19,12 @@ const Home = () => {
               </div>
               <Product />
               <img data-aos="fade-up" src={Laptop} alt="" />
-
-                
             </div>
-      
-            
+            <OffSection />
+            <Brand />
+            <Footer />
+
+
           </div>
         );
       
