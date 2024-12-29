@@ -6,21 +6,21 @@ import { IoIosHelpCircleOutline } from "react-icons/io";
 const Footer = () => {
     return (
         <div>
-            <div className=" p-4 rounded-lg shadow-md">
-                <h2 className="text-xl font-bold mb-2">Frequently Asked Questions</h2>
+            <div className=" p-4 rounded-lg ">
+                
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <div className=" p-4 rounded-lg shadow-sm h-[300px] border-black border-2">
-                        <h3 className="text-lg font-semibold mb-2">Online Payment Process</h3>
+                    <div className=" p-4 rounded-lg  h-[300px] border-black border-2">
+                        <h3 className="text-3xl font-semibold mb-2">Frequently Asked Questions</h3>
                         <p>Information about online payment methods, security measures, etc.</p>
                         <img src="" alt="Frequently Asked Questions" srcset="" className='w-auto h-auto' />
                     </div>
-                    <div className="bg-white p-4 rounded-lg shadow-sm h-[300px] border-black border-2">
-                        <h3 className="text-lg font-semibold mb-2">Home Delivery Options</h3>
+                    <div className="bg-white p-4 rounded-lg  h-[300px] border-black border-2">
+                        <h3 className="text-3xl font-semibold mb-2">Online Payment Process</h3>
                         <p>Details on home delivery services, areas covered, estimated delivery times, etc.</p>
                         <img src="" alt="Home Delivery Options" />
                     </div>
-                    <div className="bg-white p-4 rounded-lg shadow-sm h-[300px] border-black border-2">
-                        <h3 className="text-lg font-semibold mb-2">Updates on Safe Shopping in our Stores</h3>
+                    <div className="bg-white p-4 rounded-lg  h-[300px] border-black border-2">
+                        <h3 className="text-3xl font-semibold mb-2">Home Delivery Options</h3>
                         <p>Information about safety protocols, hygiene measures, etc.</p>
                         <img src="" alt="Updates on Safe Shopping in our Stores" />
                     </div>
