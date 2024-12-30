@@ -1,5 +1,5 @@
 import Home from './pages/Home'
-import Card from './components/Card'
+import Cart from './components/Cart.jsx'
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -13,13 +13,13 @@ import Product2 from './components/Product2.jsx';
 const App = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000, 
+      duration:1500, 
       once: true, 
     })} ,[]);
   return (
     <BrowserRouter>
         <Routes>
-            <Route path="card" element={<Card />} />
+            <Route path="cart" element={<Cart />} />
             <Route path="footer" element={<Footer />} />
             <Route path="off" element={<OffSection />} />
             <Route path="/" element={<Home />} />  
